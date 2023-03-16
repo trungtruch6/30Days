@@ -29,7 +29,7 @@ img {
   background: linear-gradient(45deg, #00853e, #50c878);
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .card {
