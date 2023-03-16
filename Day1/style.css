@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 10px; /* 10px = 1 rem */
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  background-image: linear-gradient(to right, #4daf54, #3d8880);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container > .card {
+  width: 320px;
+  min-height: 400px;
+  background-color: #272d40;
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+
+/* Card Header */
+.container > .card > .header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container > .card > .header-card > i {
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+.container > .card > .header-card > i.-active {
+  color: red;
+}
+.container > .card > .content-card {
+}
+/* Card Content */
+.container > .card > .content-card > .content-card__items {
+}
+.container > .card > .content-card > .content-card__items > .list-items {
+  position: relative;
+}
+.container
+  > .card
+  > .content-card
+  > .content-card__items
+  > .list-items
+  > .item:first-child {
+  transform: scale(0.85) translateX(-15px);
+}
+.container
+  > .card
+  > .content-card
+  > .content-card__items
+  > .list-items
+  > .item:nth-child(3) {
+  transform: scale(0.9);
+}
+.container
+  > .card
+  > .content-card
+  > .content-card__items
+  > .list-items
+  > .item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.container
+  > .card
+  > .content-card
+  > .content-card__items
+  > .list-items
+  > .item.-active {
+  opacity: 1;
+}
+.content-card-group {
+  padding-top: 190px;
+}
+.content-card__name {
+  color: #4daf54;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.content-card__price {
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+}
+.content-card__size,
+.content-card__color {
+  color: #fff;
+  font-size: 22px;
+  display: flex;
+  margin-top: 10px;
+}
+.content-card__size > .list-sizies,
+.content-card__color > .list-colors {
+  display: flex;
+  margin-left: 10px;
+}
+.content-card__size > .list-sizies > .size,
+.content-card__color > .list-colors > .color {
+  margin-left: 10px;
+}
+.content-card__color > .list-colors > .color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.content-card__color > .list-colors > .color.-green {
+  background-color: green;
+}
+.content-card__color > .list-colors > .color.-red {
+  background-color: red;
+}
+.content-card__color > .list-colors > .color.-black {
+  background-color: black;
+}
+.content-card-group__button {
+  display: flex;
+  margin-top: 10px;
+}
+.content-card__button {
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  background-color: #4daf54;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.content-card__size,
+.content-card__color,
+.content-card__button {
+  opacity: 0;
+}
+/* Effect */
+.card:hover {
+  cursor: pointer;
+}
+.card:hover > .content-card > .content-card__items > .list-items > .item > img {
+  transform: translateY(-180px) rotateZ(-25deg);
+  transition: transform 0.5s ease;
+}
+.card:hover > .content-card > .content-card-group > .content-card__name {
+  transform: translate(-70px, -130px);
+  transition: transform 0.5s ease;
+}
+.card:hover > .content-card > .content-card-group > .content-card__price {
+  transform: translate(-145px, -120px);
+  transition: transform 0.5s ease;
+}
+.card:hover > .content-card > .content-card-group > .content-card__size,
+.card:hover > .content-card > .content-card-group > .content-card__color,
+.card:hover
+  > .content-card
+  > .content-card-group
+  > .content-card-group__button
+  > .content-card__button {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.card
+  > .content-card
+  > .content-card-group
+  > .content-card__color
+  > .list-colors
+  > .color.-active:hover,
+.card
+  > .content-card
+  > .content-card-group
+  > .content-card__color
+  > .list-colors
+  > .color.-active {
+  transform: scale(1.3);
+  transition: transform 0.5s ease;
+}

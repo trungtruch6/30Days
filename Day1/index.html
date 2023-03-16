@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 1 (Cart product)</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="header-card">
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="content-card">
+          <div class="content-card__items">
+            <ul class="list-items">
+              <li class="item" id="green">
+                <img src="./Nike Zoom KD 12 Green.png" alt="" />
+              </li>
+              <li class="item" id="red">
+                <img src="./Nike Zoom KD 12 Red.png" alt="" />
+              </li>
+              <li class="item -active" id="black">
+                <img src="./Nike Zoom KD 12 Black.png" alt="" />
+              </li>
+            </ul>
+          </div>
+          <div class="content-card-group">
+            <div class="content-card__name">Nike Zoom KD 12</div>
+            <div class="content-card__price">$99</div>
+            <div class="content-card__size">
+              Size:
+              <ul class="list-sizies">
+                <li class="size">6</li>
+                <li class="size">7</li>
+                <li class="size">8</li>
+                <li class="size">9</li>
+              </ul>
+            </div>
+            <div class="content-card__color">
+              Color:
+              <ul class="list-colors">
+                <li class="color -green -active">
+                  <a href="#green"></a>
+                </li>
+                <li class="color -red">
+                  <a href="#red"></a>
+                </li>
+                <li class="color -black">
+                  <a href="#black"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="content-card-group__button">
+              <button type="submit" class="content-card__button -buy">
+                Buy now
+              </button>
+              <button type="submit" class="content-card__button -add">
+                Add Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
