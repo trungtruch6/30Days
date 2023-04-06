@@ -1,0 +1,220 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #ad1fd4;
+  background: radial-gradient(circle, #ad1fd4 0%, #fc466b 98%);
+}
+.container .content .keydown {
+  width: 300px;
+  height: 60px;
+  background: #16d6c4;
+  background: linear-gradient(151deg, #16d6c4 0%, #e5fd1d 35%, #7afc45 72%);
+  border-radius: 30px;
+  border: none !important;
+  outline: none !important;
+  font-size: 28px;
+  color: #fff;
+  font-style: italic;
+  text-align: center;
+}
+.container .content .keydown.-hide {
+  display: none;
+}
+.container .content .keydown.-show {
+  display: block;
+}
+.container .content .box {
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+}
+.container .content .box .eKey,
+.container .content .box .eCode,
+.container .content .box .eLocation,
+.container .content .box .eWhich {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  flex-direction: column;
+}
+.container .content .box .eKey p:first-child,
+.container .content .box .eCode p:first-child,
+.container .content .box .eLocation p:first-child,
+.container .content .box .eWhich p:first-child {
+  width: 100%;
+  height: 30px;
+  border-radius: 20px 5px 20px;
+  background: #78c0c9;
+  text-align: center;
+  padding: 5px;
+}
+.container .content .box .eKey P:last-child,
+.container .content .box .eCode P:last-child,
+.container .content .box .eLocation P:last-child,
+.container .content .box .eWhich P:last-child {
+  width: 100%;
+  height: 70px;
+  border-radius: 5px 20px 5px;
+  background: #fff;
+  text-align: center;
+  padding: 5px;
+  color: #000;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .content .box.-hide {
+  display: none;
+}
+.container .content .box.-show {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
